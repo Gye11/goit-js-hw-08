@@ -10,41 +10,20 @@
       href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
     />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <style>
-      body {
-        margin: 0;
-        padding: 24px;
-        font-family: Arial, sans-serif;
-      }
-
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 16px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .gallery img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer;
-      }
-    </style>
+    <!-- styles.css -->
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
     <ul class="gallery"></ul>
 
+    <!-- Gallery Items -->
+    <script src="./js/gallery-items.js"></script>
+
     <!-- basicLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
 
-    <!-- Main JS -->
-    <script src="./js/gallery-items.js"></script>
+    <!-- Main gallery logic -->
+    <script src="./js/gallery.js"></script>
   </body>
 </html>
